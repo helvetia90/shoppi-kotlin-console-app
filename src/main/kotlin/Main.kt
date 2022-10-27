@@ -5,7 +5,25 @@ fun main(args: Array<String>) {
     val name = readLine()
     println("""
         감사합니다. 반갑습니다, $name 님
-        원하시는 카테고리를 입력해주세요.ㅣ=
+        원하시는 카테고리를 입력해주세요.
         ***================================***
     """.trimIndent())
+
+    val categories = arrayOf("패션","전자기기","반려동물용품")
+    for(category in categories) {
+        println(category)
+    }
+    println("=> 장바구니로 이동하시려면 #을 입력해주세요")
+
+    var selectedCategory = readLine()
+    while(selectedCategory.isNullOrBlank()) {
+        println("값을 입력해주세요")
+        selectedCategory = readLine()
+    }
+    if(selectedCategory == "#") {
+        // 1.
+    } else {
+      //2.
+    }
+
 }
